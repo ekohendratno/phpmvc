@@ -7,6 +7,7 @@ Fitur:
 
 
 Struktur File dan Folder:
+```
 app/
  -config/
   -config.php
@@ -34,7 +35,7 @@ public/
  -img/
  -index.php
  -.htaccess
-
+```
 
 
 Screenshot
