@@ -58,7 +58,7 @@ class Tes extend Controller{
     public function index(){
 
 
-        $tes = $this->model('Tes');
+        $tes = $this->model('TesModel');
 
         $data = array();
         
@@ -72,7 +72,7 @@ class Tes extend Controller{
     public function simpan(){
 
 
-        $tes = $this->model('Tes');
+        $tes = $this->model('TesModel');
         if( $tes->setTes($_POST) > 0 ){
 
             Flasher::setFlash('Data berhasil disimpan!','success'); 
@@ -90,7 +90,7 @@ class Tes extend Controller{
     }
     
     public function hapus($id){
-        $tes = $this->model('Tes');
+        $tes = $this->model('TesModel');
         if( $tes->removeTes($id)){
 
             Flasher::setFlash('Data berhasil dihapus!','success'); 
@@ -113,7 +113,7 @@ class Tes extend Controller{
 app/models/Tes.php
 ```
 <?php
-class Users{
+class TesModel{
 
     private $db;
 
